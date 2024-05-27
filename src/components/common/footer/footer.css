@@ -1,0 +1,99 @@
+:root {
+    --primaryColor: rgb(14, 45, 2);
+    --SecondaryColor: rgb(111, 130, 103);
+    --blackColor: hsl(0, 0%, 11%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --textColor: hsl(240, 4%, 36%);
+    --bodyColor: rgb(240, 240, 246);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --redColor: hsl(0, 100%, 50%);
+    --green2Color: rgb(111, 130, 103);
+    --green1Color: rgba(13, 37, 2, 0.148);
+    --green3Color: rgb(14, 45, 2);
+    --greenColor: hsl(120, 100%, 25%);
+}
+
+.footerContact {
+    background-color: var(--green2Color);
+    padding: 40px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footerContact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerContact .send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContact .text {
+    margin: 0 20px;
+}
+
+.footerContact h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--green3Color);
+    padding: 50px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .legal {
+    text-align: center;
+    padding: 20px;
+    background: var(--green3Color);
+    color: rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 800px) {
+    .footerContact .text {
+        margin: 10px 0;
+    }
+
+    .footerContact h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footerContact .send {
+        flex-direction: column;
+    }
+
+    .footerContact .text {
+        margin: 10px 0;
+    }
+
+    .footerContact h1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footerContact h1 {
+        font-size: 16px;
+    }
+
+    .footerContact .text {
+        margin: 5px 0;
+    }
+}

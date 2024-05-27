@@ -1,0 +1,60 @@
+:root {
+  --primaryColor: rgb(14, 45, 2);
+  --SecondaryColor: rgb(111, 130, 103);
+  --blackColor: hsl(0, 0%, 11%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --textColor: hsl(240, 4%, 36%);
+  --bodyColor: rgb(240, 240, 246);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --redColor: hsl(0, 100%, 50%);
+  --green2Color:rgb(111, 130, 103);
+  --green1Color: rgba(13, 37, 2, 0.148);
+  --greenColor: hsl(120, 100%, 25%);
+}
+
+.featured {
+  background: var(--bodyColor);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.featured .container {
+  padding-top: 1%;
+}
+
+.featured h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--textColor);
+  font-family: 'Salsa', cursive;
+}
+
+.featured .support {
+  color: var(--redColor);
+  font-family: 'Salsa', cursive;
+}
+
+.featured .art-alive {
+  color: var(--greenColor);
+  font-family: 'Salsa', cursive;
+}
+
+@media screen and (max-width: 768px) {
+  .featured h2 {
+    font-size: 1.5rem;
+  }
+
+  .featured .container {
+    padding-top: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .featured h2 {
+    font-size: 1.2rem;
+  }
+
+  .featured .container {
+    padding-top: 10%;
+  }
+}

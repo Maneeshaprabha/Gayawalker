@@ -1,0 +1,210 @@
+:root {
+  --primaryColor: rgb(14, 45, 2);
+  --SecondaryColor: rgb(111, 130, 103);
+  --SecondaryColor1:rgb(151, 173, 141);
+  --blackColor: hsl(0, 0%, 11%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --textColor: hsl(240, 4%, 36%);
+  --bodyColor: rgb(240, 240, 246);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+}
+
+header {
+  background-color: var(--whiteColor);
+  height: 10vh;
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+header .logo img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+header .logo h2 {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+header .logo .icon {
+  font-size: 1.8rem;
+  color: var(--SecondaryColor);
+}
+
+header a {
+  margin-left: 30px;
+  transition: 0.5s;
+  font-weight: 500;
+  color: var(--SecondaryColor);
+  font-size: 25px; 
+}
+
+header a:hover {
+  color: var(--SecondaryColor1);
+}
+
+header span {
+  width: auto;
+  padding: 0px 6px;
+  background: var(--primaryColor);
+  border-radius: 50px;
+  color: #ffffff;
+  margin-right: 4px;
+  font-weight: 400;
+}
+
+header h4 {
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+header .toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+
+  header img {
+    margin-top: 10px;
+  }
+
+  header .button {
+    display: none;
+  }
+
+  header .nav .flex {
+    display: none;
+  }
+
+  header .toggle {
+    display: block;
+    margin-top: 20px;
+  }
+
+  header .toggle button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%; /* Reduced width for smaller box */
+    background-color: var(--bodyColor);
+    padding: 10px; /* Reduced padding for smaller box */
+    border-radius: 10px;
+    border: 2px solid var(--SecondaryColor);
+    box-shadow: 0 5px 30px rgba(26, 31, 28, 0.288);
+    margin: 10px;
+  }
+
+  header .logo h2 {
+    font-size: 0.8rem; /* Smaller font size for smaller screens */
+    margin-left: 0.1rem; /* Adjusted margin for smaller screens */
+  }
+
+  header li a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--SecondaryColor);
+  }
+
+  header .icon {
+    color: var(--SecondaryColor);
+  }
+
+  header {
+    background-color: var(--whiteColor);
+    height: 10vh;
+    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 912px) and (min-height: 941px) {
+  header {
+    padding: 0;
+    height: auto;
+    box-shadow: none;
+    margin: 10px;
+  }
+
+  header .container {
+    justify-content: space-between;
+  }
+
+  header img {
+    margin-top: 10px;
+  }
+
+  header .logo h2 {
+    font-size: 1.2rem; /* Smaller font size for specific resolution */
+    margin-left: 0.3rem; /* Adjusted margin for specific resolution */
+  }
+
+  header .nav {
+    display: none;
+  }
+
+  header .toggle {
+    display: block;
+    margin-top: 10px;
+  }
+
+  header .toggle button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%; /* Further reduced width for specific resolution */
+    padding: 5px; /* Further reduced padding for specific resolution */
+    border-radius: 10px;
+    border: 2px solid var(--SecondaryColor);
+    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    margin: 10px;
+  }
+
+  header li a {
+    display: inline-block;
+    margin-bottom: 5px; /* Adjusted for specific resolution */
+    color: #fff;
+  }
+
+  header .icon {
+    color: var(--SecondaryColor);
+  }
+}
+

@@ -1,0 +1,33 @@
+.hero {
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+  }
+  .hero .container {
+    padding-top: 1%;
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .hero .container {
+      padding-top:  2%; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 100px) {
+
+    .hero .container {
+      padding-top: 10%; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+
+    .hero .container {
+      padding-top: 15%; /* Adjust padding for smaller screens */
+    }
+  }

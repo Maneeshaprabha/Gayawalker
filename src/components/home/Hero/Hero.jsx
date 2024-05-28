@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <section className="hero">
         <div className="container">
-            <img src="./images/gaya walker image.png" alt="" />
+            <img src="./images/image1.png" alt="" />
         </div>
   
       </section>

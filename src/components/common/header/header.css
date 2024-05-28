@@ -1,13 +1,23 @@
 :root {
-  --primaryColor: rgb(14, 45, 2);
-  --SecondaryColor: rgb(111, 130, 103);
-  --SecondaryColor1:rgb(151, 173, 141);
+  --primaryColor: #082040; /* Dark Blue */
+  --secondaryColor: #0a2a50; /* Slightly lighter Dark Blue */
+  --secondaryColor1:rgb(29, 90, 165); /* Slightly lighter Dark Blue */
+
+  --green2Color: #0c345a; /* Medium Dark Blue */
+  --green1Color: rgba(8, 32, 64, 0.148); /* Transparent Dark Blue */
+  --green3Color: #0a213d; /* Darker Blue */
+
+  --redColor: hsl(0, 100%, 50%);
+--greenColor: hsl(120, 100%, 25%);
+  /* Retain existing colors */
   --blackColor: hsl(0, 0%, 11%);
   --whiteColor: hsl(0, 0%, 100%);
   --textColor: hsl(240, 4%, 36%);
   --bodyColor: rgb(240, 240, 246);
   --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
 }
+
+
 
 header {
   background-color: var(--whiteColor);
@@ -44,19 +54,19 @@ header .logo h2 {
 
 header .logo .icon {
   font-size: 1.8rem;
-  color: var(--SecondaryColor);
+  color: var(--secondaryColor);
 }
 
 header a {
   margin-left: 30px;
   transition: 0.5s;
   font-weight: 500;
-  color: var(--SecondaryColor);
+  color: var(--secondaryColor);
   font-size: 25px; 
 }
 
 header a:hover {
-  color: var(--SecondaryColor1);
+  color: var(--secondaryColor1);
 }
 
 header span {
@@ -80,7 +90,17 @@ header .toggle {
 
 @media screen and (max-width: 768px) {
   header {
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 0;
+    background-color: var(--whiteColor);
+    height: 10vh;
+    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    position: sticky;
+    top: 0;
+    z-index: 999;
   }
 
   header img {
@@ -116,7 +136,7 @@ header .toggle {
     background-color: var(--bodyColor);
     padding: 10px; /* Reduced padding for smaller box */
     border-radius: 10px;
-    border: 2px solid var(--SecondaryColor);
+    border: 2px solid var(--secondaryColor);
     box-shadow: 0 5px 30px rgba(26, 31, 28, 0.288);
     margin: 10px;
   }
@@ -129,82 +149,10 @@ header .toggle {
   header li a {
     display: inline-block;
     margin-bottom: 20px;
-    color: var(--SecondaryColor);
+    color: var(--secondaryColor);
   }
 
   header .icon {
-    color: var(--SecondaryColor);
-  }
-
-  header {
-    background-color: var(--whiteColor);
-    height: 10vh;
-    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
-    padding: 12px 0;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+    color: var(--secondaryColor);
   }
 }
-
-@media screen and (max-width: 912px) and (min-height: 941px) {
-  header {
-    padding: 0;
-    height: auto;
-    box-shadow: none;
-    margin: 10px;
-  }
-
-  header .container {
-    justify-content: space-between;
-  }
-
-  header img {
-    margin-top: 10px;
-  }
-
-  header .logo h2 {
-    font-size: 1.2rem; /* Smaller font size for specific resolution */
-    margin-left: 0.3rem; /* Adjusted margin for specific resolution */
-  }
-
-  header .nav {
-    display: none;
-  }
-
-  header .toggle {
-    display: block;
-    margin-top: 10px;
-  }
-
-  header .toggle button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-
-  header .small {
-    position: absolute;
-    top: 10vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%; /* Further reduced width for specific resolution */
-    padding: 5px; /* Further reduced padding for specific resolution */
-    border-radius: 10px;
-    border: 2px solid var(--SecondaryColor);
-    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
-    margin: 10px;
-  }
-
-  header li a {
-    display: inline-block;
-    margin-bottom: 5px; /* Adjusted for specific resolution */
-    color: #fff;
-  }
-
-  header .icon {
-    color: var(--SecondaryColor);
-  }
-}
-

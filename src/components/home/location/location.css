@@ -1,16 +1,23 @@
 :root {
-  --primaryColor: rgb(14, 45, 2);
-  --SecondaryColor: rgb(111, 130, 103);
+  --primaryColor: #082040; /* Dark Blue */
+  --secondaryColor: #0a2a50; /* Slightly lighter Dark Blue */
+  --secondaryColor1:rgb(29, 90, 165); /* Slightly lighter Dark Blue */
+
+  --green2Color: #0c345a; /* Medium Dark Blue */
+  --green1Color: rgba(8, 32, 64, 0.148); /* Transparent Dark Blue */
+  --green3Color: #0a213d; /* Darker Blue */
+
+  --redColor: hsl(0, 100%, 50%);
+--greenColor: hsl(120, 100%, 25%);
+  /* Retain existing colors */
   --blackColor: hsl(0, 0%, 11%);
   --whiteColor: hsl(0, 0%, 100%);
   --textColor: hsl(240, 4%, 36%);
   --bodyColor: rgb(240, 240, 246);
   --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
-  --redColor: hsl(0, 100%, 50%);
-  --green2Color:rgb(111, 130, 103);
-  --green1Color: rgba(13, 37, 2, 0.148);
-  --greenColor: hsl(120, 100%, 25%);
 }
+
+
 
   .location {
     background: var(--green1Color);

@@ -155,4 +155,11 @@ header .toggle {
   header .icon {
     color: var(--secondaryColor);
   }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 }

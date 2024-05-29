@@ -6,9 +6,9 @@ const Featured = () => {
     <section className='featured'>
       <div className='container'>
         <h2>
-          <span className="support">Support</span> me to create more vlogs.... <br />
-          Your support really helps me to <br />
-          keep my <span className="art-alive">art alive..</span>
+          <span className="support">Support</span> me to Travel more .... <br />
+          And  create more vlogs <br />
+        <span className="art-alive">for You..</span>
         </h2>
       </div>
     </section>

@@ -7,8 +7,8 @@ const Featured = () => {
       <div className='container'>
         <h2>
           <span className="support">Support</span> me to Travel more .... <br />
-          And  create more vlogs <br />
-        <span className="art-alive">for You..</span>
+          And  create more vlogs for You..<br />  Your Support really help me to <br></br>  keep my
+        <span className="art-alive"> art alive ..</span>
         </h2>
       </div>
     </section>
